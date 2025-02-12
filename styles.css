@@ -9,8 +9,7 @@ body {
 }
 
 header {
-    background-color: #6A82FB;
-    background-image: linear-gradient(to bottom right, #F9FBCB, #6A82FB);
+    background-image: radial-gradient( #3d8cf5,#bdcfe4);
     color: white;
     padding: 20px;
     text-align: center;
@@ -36,9 +35,13 @@ section {
     margin: 20px;
 }
 
+p
+{
+    padding-right: 30%;
+}
+
 footer {
-    background-color: #6A82FB;
-    background-image: linear-gradient(to bottom right, #6A82FB, #F9FBCB);
+    background-image: radial-gradient( #3d8cf5,#bdcfe4);
     color: white;
     text-align: center;
     padding: 10px;

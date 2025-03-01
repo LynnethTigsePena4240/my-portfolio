@@ -10,11 +10,13 @@ showbtn1.addEventListener("click",function()
     if(text.style.display === "none")
     {
         text.style.display = "block"
+        showbtn1.innerText = "Hide Details"
     }
 
     else
     {
         text.style.display = "none"
+        showbtn1.innerText = "Show Details"
     }
 
 })
@@ -25,11 +27,13 @@ showbtn2.addEventListener("click",function()
     if (text.style.display === "none")
     {
         text.style.display = "block"
+        showbtn2.innerText = "Hide Details"
     }
     
     else
     {
          text.style.display = "none"
+         showbtn2.innerText = "Show Details"
     }
 })
 
@@ -39,10 +43,12 @@ showbtn3.addEventListener("click",function()
     if (text.style.display === "none")
     {
         text.style.display = "block"
+        showbtn3.innerText = "Hide Details"
     }
         
     else
     {
         text.style.display = "none"
+        showbtn3.innerText = "Show Details"
     }
 })

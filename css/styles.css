@@ -117,10 +117,10 @@ input
 
 .submit-btn{
     width: 70px;
-
 }
 
 .error {
     color: red;
     font-size: 0.9em;
+    padding: -5px;
 }

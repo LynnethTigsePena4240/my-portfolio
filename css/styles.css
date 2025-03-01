@@ -79,3 +79,28 @@ footer {
         margin: 10px;
     }
 }
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item{
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #8cb9f467;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    background-color: #a9d1e7;
+}
+
+button:hover{
+    background-color: rgb(61, 128, 221);
+}

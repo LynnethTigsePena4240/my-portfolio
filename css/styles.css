@@ -104,3 +104,23 @@ button{
 button:hover{
     background-color: rgb(61, 128, 221);
 }
+
+#contact
+{
+    margin-bottom: 60px;
+}
+
+input
+{
+    padding: 5px;
+}
+
+.submit-btn{
+    width: 70px;
+
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}

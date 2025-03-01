@@ -52,3 +52,46 @@ showbtn3.addEventListener("click",function()
         showbtn3.innerText = "Show Details"
     }
 })
+
+var form = document.getElementById("contact-form")
+const nameInput = document.getElementById("name")
+var emailInput = document.getElementById("email")
+var messageInput = document.getElementById("message")
+var submitbtn = document.getElementById("submitbtn") 
+
+var nameErr = document.getElementById("nameError")
+var emailErr = document.getElementById("emailError")
+var msgErr = document.getElementById("messageError")
+
+form.addEventListener("submit", function(event)
+{
+    nameErr.textContent = "";
+    if(nameInput.value.trim() === "")
+    {
+        nameErr.textContent = "Please enter your name"
+        event.preventDefault();
+    }
+
+    if(emailInput.value.trim() === "")
+    {
+        emailErr.textContent = "Please enter your email"
+        event.preventDefault()
+    }
+    else if (!validateEmail(emailInput.value))
+    {
+        emailErr.textContent = "Please enter a vaild email"
+        event.preventDefault();
+    }
+
+    if(messageInput.value.trim() === "")
+    {
+        msgErr.textContent = "Please leave a message"
+        event.preventDefault();
+    }
+})
+
+function validateEmail(email)
+{
+    const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return re.test(String(email))
+}

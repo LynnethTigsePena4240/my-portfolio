@@ -82,13 +82,11 @@ form.addEventListener("submit", function(event)
     {
         emailErr.textContent = "Please enter your email"
         isVaild = false;
-        console.log("falses");
         
     } 
     else if (!validateEmail(emailInput.value))
     {
         emailErr.textContent = "Please enter a vaild email"
-        console.log("false");
         isVaild = false;
     }
 
@@ -107,6 +105,41 @@ form.addEventListener("submit", function(event)
 
 function validateEmail(email)
 {
-    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return re.test(String(email))
 }
+
+let typed;
+
+document.getElementById("email").addEventListener("focus", function()
+{
+
+    if (!typed)
+    {
+        typed = new Typed('#email', {
+            strings: ['Enter your email', 'Heres an example:', 'smith@hotmail.com'],
+            typeSpeed: 0,
+            backSpeed: 0,
+            attr: 'placeholder',
+            bindInputFocusEvents: true,
+            loop: false
+        })
+    }
+
+})
+
+// added the type.js external libraries
+var aboutSec = document.getElementById("about")
+var aboutText = aboutSec.innerHTML //save the text before it is cleared
+//to clear the text in the html already
+aboutSec.innerHTML = ""
+
+//the type animation is then set up
+var typed1= new Typed('#about', {
+    strings: [aboutText],
+    typeSpeed: 0,
+    backSpeed: 0,
+    bindInputFocusEvents: true,
+    loop: false,
+    showCursor: false
+})

@@ -161,17 +161,32 @@ var typed1= new Typed('#about', {
     showCursor: false
 })
 
+var darkbtn = document.getElementById("darkBtn")
+
+if (localStorage.getItem("dark-mode") === "true")
+{
+    document.body.classList.add("dark-mode")
+    darkbtn.innerText = "Light Mode"
+}
+else
+{
+    document.body.classList.remove("dark-mode")
+    darkbtn.innerText = "Dark Mode"
+}
+
 darkBtn.addEventListener("click",function()
 {
     var element = document.body;
     element.classList.toggle("dark-mode")
-    var darkbtn = document.getElementById("darkBtn")
+    
     if (element.classList.contains("dark-mode"))
     {
+        localStorage.setItem("dark-mode", "true")
         darkbtn.innerText = "Light Mode"
     }
     else
     {
+        localStorage.setItem("dark-mode", "false")
         darkbtn.innerText = "Dark Mode"
     }
 })

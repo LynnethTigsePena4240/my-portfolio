@@ -35,6 +35,10 @@ body {
     color: white;
   }
 
+  body, section, .flex-item{
+    transition: background-color 0.3s, color 0.3s;
+  }
+
 header {
     background-image: radial-gradient( #3d8cf5,#bdcfe4);
     color: white;

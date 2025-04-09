@@ -7,6 +7,12 @@
     font-family: Copeland;
     src: url(Copeland.otf);
 }
+
+@font-face{
+    font-family: Strike;
+    src: url(Strike.otf);
+}
+
 body {
     /* font-family: Arial, sans-serif; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -24,8 +30,9 @@ header {
 }
 
 h1{
-    font-family: "Copeland";
-    font-size: xx-large;
+    font-family: "Strike";
+    font-size: 50px;
+    font-weight: normal;
 }
 
 nav ul {

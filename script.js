@@ -160,3 +160,18 @@ var typed1= new Typed('#about', {
     loop: false,
     showCursor: false
 })
+
+darkBtn.addEventListener("click",function()
+{
+    var element = document.body;
+    element.classList.toggle("dark-mode")
+    var darkbtn = document.getElementById("darkBtn")
+    if (element.classList.contains("dark-mode"))
+    {
+        darkbtn.innerText = "Light Mode"
+    }
+    else
+    {
+        darkbtn.innerText = "Dark Mode"
+    }
+})

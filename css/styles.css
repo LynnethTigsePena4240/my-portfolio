@@ -1,4 +1,12 @@
 /* General Styles */
+@font-face{
+    font-family: Miraden;
+    src: url(Miraden\ Florale.otf);
+}
+@font-face{
+    font-family: Copeland;
+    src: url(Copeland.otf);
+}
 body {
     /* font-family: Arial, sans-serif; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -13,6 +21,11 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+h1{
+    font-family: "Copeland";
+    font-size: xx-large;
 }
 
 nav ul {
@@ -44,7 +57,9 @@ section {
 }
 
 h2 {
+    font-family: "Miraden";
     color: #333;
+    font-size: xxx-large;
 }
 
 p.section

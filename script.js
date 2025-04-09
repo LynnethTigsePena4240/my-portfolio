@@ -190,3 +190,25 @@ darkBtn.addEventListener("click",function()
         darkbtn.innerText = "Dark Mode"
     }
 })
+
+var topbtn = document.getElementById("topbtn")
+
+window.onscroll = function()
+{
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+    {
+        topbtn.style.display = "block"
+    }
+    else
+    {
+        topbtn.style.display = "none"
+    }
+}
+
+topbtn.addEventListener("click", function()
+{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})

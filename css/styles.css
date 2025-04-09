@@ -42,7 +42,7 @@ body {
 header {
     background-image: radial-gradient( #3d8cf5,#bdcfe4);
     color: white;
-    padding: 20px;
+    padding: 1px;
     text-align: center;
 }
 
@@ -193,4 +193,24 @@ input
 
 html{
     scroll-behavior: smooth;
+}
+
+#topbtn{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #3d8cf5;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 0.5; /* Hidden by default */
+}
+
+#topbtn:hover{
+    opacity: 1;        /* Fully visible on hover */
 }

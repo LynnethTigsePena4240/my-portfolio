@@ -2,20 +2,26 @@
 var showbtn1 = document.getElementById("showbtn1")
 var showbtn2 = document.getElementById("showbtn2")
 var showbtn3 = document.getElementById("showbtn3")
-var display = document.getElementById("text1")
+var display1 = document.getElementById("text1")
+var display2 = document.getElementById("text2")
+var display3 = document.getElementById("text3")
+var preview1 = document.getElementById("preview1")
+var preview2 = document.getElementById("preview2")
+var preview3 = document.getElementById("preview3")
 
 showbtn1.addEventListener("click",function()
 {
-    var text = document.getElementById("text1")
-    if(text.style.display === "none")
+    if(display1.style.display === "none")
     {
-        text.style.display = "block"
+        preview1.style.display = "none"
+        display1.style.display = "block"
         showbtn1.innerText = "Hide Details"
     }
 
     else
     {
-        text.style.display = "none"
+        preview1.style.display = "block"
+        display1.style.display = "none"
         showbtn1.innerText = "Show Details"
     }
 
@@ -23,32 +29,34 @@ showbtn1.addEventListener("click",function()
 
 showbtn2.addEventListener("click",function()
 {
-    var text = document.getElementById("text2")
-    if (text.style.display === "none")
+    if (display2.style.display === "none")
     {
-        text.style.display = "block"
+        preview2.style.display = "none"
+        display2.style.display = "block"
         showbtn2.innerText = "Hide Details"
     }
     
     else
     {
-         text.style.display = "none"
-         showbtn2.innerText = "Show Details"
+        preview2.style.display = "block"
+        display2.style.display = "none"
+        showbtn2.innerText = "Show Details"
     }
 })
 
 showbtn3.addEventListener("click",function()
 {
-    var text = document.getElementById("text3")
-    if (text.style.display === "none")
+    if (display3.style.display === "none")
     {
-        text.style.display = "block"
+        preview3.style.display = "none"
+        display3.style.display = "block"
         showbtn3.innerText = "Hide Details"
     }
         
     else
     {
-        text.style.display = "none"
+        preview3.style.display = "block"
+        display3.style.display = "none"
         showbtn3.innerText = "Show Details"
     }
 })

@@ -173,3 +173,7 @@ input
     font-size: 0.9em;
     padding: -5px;
 }
+
+html{
+    scroll-behavior: smooth;
+}

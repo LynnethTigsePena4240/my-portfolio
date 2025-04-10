@@ -11,13 +11,11 @@ var preview3 = document.getElementById("preview3")
 
 showbtn1.addEventListener("click",function()
 {
-    var flexItem = showbtn1.closest(".flex-item")
     if(display1.style.display === "none")
     {
         preview1.style.display = "none"
         display1.style.display = "block"
         showbtn1.innerText = "Hide Details"
-        flexItem.classList.add("fixed-height")
     }
 
     else
@@ -25,20 +23,17 @@ showbtn1.addEventListener("click",function()
         preview1.style.display = "block"
         display1.style.display = "none"
         showbtn1.innerText = "Show Details"
-        flexItem.classList.remove("fixed-height")
     }
 
 })
 
 showbtn2.addEventListener("click",function()
 {
-    var flexItem = showbtn2.closest(".flex-item")
     if (display2.style.display === "none")
     {
         preview2.style.display = "none"
         display2.style.display = "block"
         showbtn2.innerText = "Hide Details"
-        flexItem.classList.add("fixed-height")
     }
     
     else
@@ -46,19 +41,16 @@ showbtn2.addEventListener("click",function()
         preview2.style.display = "block"
         display2.style.display = "none"
         showbtn2.innerText = "Show Details"
-        flexItem.classList.remove("fixed-height")
     }
 })
 
 showbtn3.addEventListener("click",function()
 {
-    var flexItem = showbtn3.closest(".flex-item")
     if (display3.style.display === "none")
     {
         preview3.style.display = "none"
         display3.style.display = "block"
         showbtn3.innerText = "Hide Details"
-        flexItem.classList.add("fixed-height")
     }
         
     else
@@ -66,7 +58,6 @@ showbtn3.addEventListener("click",function()
         preview3.style.display = "block"
         display3.style.display = "none"
         showbtn3.innerText = "Show Details"
-        flexItem.classList.remove("fixed-height")
     }
 })
 

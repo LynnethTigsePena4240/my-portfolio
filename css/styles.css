@@ -155,11 +155,6 @@ footer {
     background-color: #8cb9f467;
 }
 
-.fixed-height{
-    flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
-    max-height: 100%; /* Set a fixed height for the flex item */
-}
-
 button{
     border-radius: 5px;
     padding: 5px;

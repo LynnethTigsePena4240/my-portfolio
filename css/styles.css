@@ -209,3 +209,54 @@ html{
 #topbtn:hover{
     opacity: 1;        /* Fully visible on hover */
 }
+
+a {
+    color: #5420b4;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+  }
+  
+  a:hover {
+    color: #4b45fb;
+    right: 0;
+    text-decoration: none;
+  }
+  
+  a:hover:after {
+    border-color: #4b45fb;
+    right: 0;
+  }
+  
+  a:after {
+    border-radius: 1em;
+    border-top: .1em solid #4b45fb;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+    transition: right .4s,
+                border-color .4s ease-out;
+  }
+  
+  a:hover:after {
+    animation: anchor-underline 3s infinite;
+    border-color: #4b45fb;
+  }
+  
+  @keyframes anchor-underline {
+    0%, 10% {
+      left: 0;
+      right: 100%;
+    }
+    40%, 60% {
+      left: 0;
+      right: 0;
+    }
+    90%, 100% {
+      left: 100%;
+      right: 0;
+    }
+  }
